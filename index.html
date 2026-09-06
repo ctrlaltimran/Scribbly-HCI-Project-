@@ -13,6 +13,7 @@
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
+
   <div class="announcement">✦ FREE SHIPPING ON ORDERS OVER $35 <span>•</span> NEW DOODLE DROP IS LIVE <span>•</span> MADE FOR MESSY IDEAS ✦</div>
 
   <header class="site-header">
@@ -24,6 +25,8 @@
       <a href="#products">Products</a>
       <a href="#about">About</a>
       <a href="#faq">FAQs</a>
+      <a href="#bulk">Bulk Orders</a>
+      <a href="#contact">Contact</a>
     </nav>
     <div class="header-actions">
       <button class="icon-btn" id="searchBtn" aria-label="Search products">
@@ -86,8 +89,9 @@
       </div>
     </div>
 
-    <section class="products section-pad" id="products">
-      <div class="section-heading reveal">
+    <section class="products-section section-pad" id="products">
+      <div class="products-card reveal">
+        <div class="section-heading">
         <div>
           <span class="eyebrow"><span class="dot orange"></span> CURRENT OBSESSIONS</span>
           <h2>Desk stuff worth<br><span class="scribble-underline">getting distracted by</span>.</h2>
@@ -135,13 +139,62 @@
           <div class="product-info"><div><small>PLANNERS</small><h3>Do The Thing Planner</h3></div><b>$18</b></div>
           <button class="add-btn">Add to bag <span>＋</span></button>
         </article>
+
+        <article class="product-card reveal tilt-card" data-product="Highlighter Juice Trio">
+          <div class="product-art product-orange">
+            <span class="badge">CHONKY</span>
+            <div class="highlighter-trio"><i></i><i></i><i></i></div>
+          </div>
+          <div class="product-info"><div><small>DESK TOOLS</small><h3>Highlighter Juice Trio</h3></div><b>$11</b></div>
+          <button class="add-btn">Add to bag <span>＋</span></button>
+        </article>
+
+        <article class="product-card reveal tilt-card" data-product="Brain Dump Desk Pad">
+          <div class="product-art product-mint">
+            <span class="badge">LIMITED</span>
+            <div class="desk-pad-art">
+              <div class="desk-pad-header"><span>DAILY CHAOS GRID</span><span>50 SHEETS</span></div>
+              <div class="desk-pad-grid"><span>priority: 1</span><span>snack time</span><span>idea spark</span><span>doodle zone</span></div>
+              <div class="desk-pad-footer">✦ tear & repeat</div>
+            </div>
+          </div>
+          <div class="product-info"><div><small>DESK MATS</small><h3>Brain Dump Desk Pad</h3></div><b>$22</b></div>
+          <button class="add-btn">Add to bag <span>＋</span></button>
+        </article>
+
+        <article class="product-card reveal tilt-card" data-product="Wobbly Washi Tape Set">
+          <div class="product-art product-rose">
+            <span class="badge">STAFF PICK</span>
+            <div class="washi-stack">
+              <div class="washi-roll w1">〰 squiggle</div>
+              <div class="washi-roll w2">✦ starry</div>
+              <div class="washi-roll w3">☻ smileys</div>
+            </div>
+          </div>
+          <div class="product-info"><div><small>ACCESSORIES</small><h3>Wobbly Washi Tape Set</h3></div><b>$8</b></div>
+          <button class="add-btn">Add to bag <span>＋</span></button>
+        </article>
+
+        <article class="product-card reveal tilt-card" data-product="Chaos Organizer Pouch">
+          <div class="product-art product-cyan">
+            <span class="badge">NEW DROP</span>
+            <div class="pouch-art">
+              <div class="pouch-peep"></div>
+              <div class="pouch-zip"><div class="pouch-pull"></div></div>
+              <div class="pouch-patch">✦ Scribbly Pouch</div>
+            </div>
+          </div>
+          <div class="product-info"><div><small>STORAGE</small><h3>Chaos Organizer Pouch</h3></div><b>$16</b></div>
+          <button class="add-btn">Add to bag <span>＋</span></button>
+        </article>
       </div>
 
-      <div class="product-footer reveal">
+      <div class="product-footer">
         <p><span>↳</span> New drops arrive in small batches because too much choice is a choice.</p>
         <button class="btn btn-light">View all goodies <span>↗</span></button>
       </div>
-    </section>
+    </div>
+  </section>
 
     <section class="about section-pad" id="about">
       <div class="about-card reveal">
@@ -192,6 +245,89 @@
         </article>
       </div>
     </section>
+
+    <!-- Bulk Orders & Contact Section -->
+    <section class="bulk-section section-pad" id="bulk">
+      <div class="bulk-wrap reveal">
+        <div class="bulk-info">
+          <span class="eyebrow"><span class="dot orange"></span> BULK ORDERS & CORPORATE</span>
+          <h2>Big ideas need<br><span class="scribble-word">lots of stationery</span>.</h2>
+          <p>Planning team gifts, workshops, company retreats, wedding favors, or custom school merchandise? We provide volume discounts, custom branding, and personalized packaging for orders of 25+ items.</p>
+
+          <div class="direct-contact" id="contact">
+            <span class="direct-title">Direct Inquiries:</span>
+            <div class="contact-chips">
+              <a href="mailto:bulk@scribbly.store" class="contact-chip"><span>✉</span> bulk@scribbly.store</a>
+              <a href="tel:+15557274225" class="contact-chip"><span>☎</span> +1 (555) 727-4225</a>
+              <span class="contact-chip note"><span>⏱</span> Reply within 24 hours</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bulk-form-card">
+          <div class="bulk-form-header">
+            <h3>Request a Bulk Quote</h3>
+            <p>Tell us what you need and we’ll reply with pricing and mockups.</p>
+          </div>
+          
+          <form class="bulk-form" id="bulkForm">
+            <div class="form-grid-2">
+              <div class="input-field">
+                <label>First name <span class="req">*</span></label>
+                <input type="text" id="bulkFirstName" placeholder="Enter your name" required>
+              </div>
+              <div class="input-field">
+                <label>Last name <span class="req">*</span></label>
+                <input type="text" id="bulkLastName" placeholder="Enter your last name" required>
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="input-field">
+                <label>Work Email <span class="req">*</span></label>
+                <input type="email" id="bulkEmail" placeholder="you@company.com" required>
+              </div>
+              <div class="input-field">
+                <label>Company / Event name</label>
+                <input type="text" id="bulkCompany" placeholder="e.g. Acme Studio or Wedding">
+              </div>
+            </div>
+
+            <div class="input-field">
+              <label>Estimated Quantity <span class="req">*</span></label>
+              <div class="qty-pills" id="qtyPills">
+                <button type="button" class="qty-pill active" data-qty="25–50">25–50</button>
+                <button type="button" class="qty-pill" data-qty="50–100">50–100</button>
+                <button type="button" class="qty-pill" data-qty="100–250">100–250</button>
+                <button type="button" class="qty-pill" data-qty="250–500">250–500</button>
+                <button type="button" class="qty-pill" data-qty="500–1,000">500–1,000</button>
+                <button type="button" class="qty-pill" data-qty="1,000+">1,000+</button>
+              </div>
+            </div>
+
+            <div class="input-field">
+              <label>Product of Interest <span class="req">*</span></label>
+              <select id="bulkProduct" required>
+                <option value="Cloud Nine Notebooks">Cloud Nine Notebooks</option>
+                <option value="Doodle Juice Gel Pens">Doodle Juice Gel Pens</option>
+                <option value="Tiny Triumphs Sticky Sets">Tiny Triumphs Sticky Sets</option>
+                <option value="Do The Thing Planners">Do The Thing Planners</option>
+                <option value="Custom Mixed Gift Bundle">Custom Mixed Gift Bundle</option>
+              </select>
+            </div>
+
+            <div class="input-field">
+              <label>Project notes or timeline</label>
+              <textarea id="bulkNotes" rows="3" placeholder="Tell us about your deadline, custom logo requirements, or shipping needs..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-cyan bulk-submit">
+              Submit Bulk Request <span>↗</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -208,7 +344,7 @@
     </div>
     <div class="footer-bottom">
       <span>© 2026 Scribbly Studio</span>
-      <div><a href="#products">Shop</a><a href="#about">About</a><a href="#faq">FAQs</a><a href="login.html">Account</a></div>
+      <div><a href="#products">Shop</a><a href="#about">About</a><a href="#faq">FAQs</a><a href="#bulk">Bulk Orders</a><a href="#contact">Contact</a><a href="login.html">Account</a></div>
       <span>Made with ✦ & questionable handwriting</span>
     </div>
     <div class="footer-word">SCRIBBLY!</div>

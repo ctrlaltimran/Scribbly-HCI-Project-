@@ -113,3 +113,28 @@ $$('.show-password').forEach(btn=>btn.addEventListener('click',()=>{
 // demo auth forms
 $('#loginForm')?.addEventListener('submit',e=>{e.preventDefault();showToast('Demo login complete ✦');setTimeout(()=>location.href='index.html',1000)});
 $('#signupForm')?.addEventListener('submit',e=>{e.preventDefault();showToast('Welcome to Scribbly ✦');setTimeout(()=>location.href='index.html',1000)});
+
+// bulk order quantity pills selector
+$$('.qty-pill').forEach(pill => {
+  pill.addEventListener('click', () => {
+    $$('.qty-pill').forEach(p => p.classList.remove('active'));
+    pill.classList.add('active');
+  });
+});
+
+// bulk order form submission
+$('#bulkForm')?.addEventListener('submit', e => {
+  e.preventDefault();
+  const name = $('#bulkFirstName')?.value || 'Friend';
+  const qty = $('.qty-pill.active')?.dataset.qty || '25+';
+  const product = $('#bulkProduct')?.value || 'stationery';
+  showToast(`Bulk inquiry received, ${name}! We'll reply in 24h ✦`);
+  e.target.reset();
+  // Keep first pill active after reset
+  const firstPill = $('.qty-pill');
+  if (firstPill) {
+    $$('.qty-pill').forEach(p => p.classList.remove('active'));
+    firstPill.classList.add('active');
+  }
+});
+
