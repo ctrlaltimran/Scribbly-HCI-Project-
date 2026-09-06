@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#8e61b5" />
+  <title>Sign up — Scribbly</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="auth-body signup-page">
+  <div class="grain" aria-hidden="true"></div>
+  <a class="auth-brand brand" href="index.html"><span class="brand-mark">✎</span><span>scribbly</span><i>!</i></a>
+  <a class="back-home" href="index.html">← back to shop</a>
+  <main class="auth-wrap">
+    <section class="auth-art signup-art">
+      <div class="auth-copy">
+        <span class="eyebrow"><span class="dot orange"></span> JOIN THE CLUB</span>
+        <h1>More ideas.<br><span class="scribble-word">Less boring.</span></h1>
+        <p>Create an account for faster checkout, saved favorites and first dibs on new stationery drops.</p>
+      </div>
+      <div class="signup-stack">
+        <div class="signup-sticky a">tiny<br><b>joys</b> ✦</div>
+        <div class="signup-sticky b">big<br><b>ideas</b> ☻</div>
+        <div class="signup-sticky c">good<br><b>paper</b> ↗</div>
+      </div>
+      <div class="auth-squiggle">〰〰</div>
+      <div class="auth-flower flower-orange"><i></i><i></i><i></i><i></i><i></i><b></b></div>
+    </section>
+    <section class="auth-panel">
+      <div class="auth-form-wrap">
+        <span class="eyebrow"><span class="dot"></span> START SCRIBBLING</span>
+        <h2>Create account</h2>
+        <p class="auth-sub">It takes less time than choosing a pen color.</p>
+        <form class="auth-form" id="signupForm">
+          <div class="two-fields"><label>First name<input type="text" placeholder="First name" required></label><label>Last name<input type="text" placeholder="Last name" required></label></div>
+          <label>Email address<input type="email" placeholder="you@email.com" required></label>
+          <label>Password<div class="password-wrap"><input id="signupPassword" type="password" minlength="6" placeholder="6+ characters" required><button type="button" class="show-password" data-target="signupPassword">show</button></div></label>
+          <label class="checkbox terms"><input type="checkbox" required><span></span>I agree to the Terms & Privacy Policy</label>
+          <button class="btn btn-dark auth-submit" type="submit">Create my account <span>↗</span></button>
+          <div class="form-divider"><span>or</span></div>
+          <button class="social-btn" type="button"><span class="google-g">G</span> Continue with Google</button>
+          <p class="switch-auth">Already have an account? <a href="login.html">Log in →</a></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <div class="toast" id="toast">Welcome to Scribbly ✦</div>
+  <script src="script.js"></script>
+</body>
+</html>

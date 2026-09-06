@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#8e61b5" />
+  <meta name="description" content="Scribbly — playful stationery for notes, plans, doodles and everyday ideas." />
+  <title>Scribbly — Stationery for ideas that move</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="announcement">✦ FREE SHIPPING ON ORDERS OVER $35 <span>•</span> NEW DOODLE DROP IS LIVE <span>•</span> MADE FOR MESSY IDEAS ✦</div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Scribbly home">
+      <span class="brand-mark">✎</span><span>scribbly</span><i>!</i>
+    </a>
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a class="active" href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#faq">FAQs</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="Search products">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"></circle><path d="m16 16 4 4"></path></svg>
+      </button>
+      <button class="icon-btn bag-btn" aria-label="Shopping bag">
+        <svg viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8Z"></path><path d="M9 9V6a3 3 0 0 1 6 0v3"></path></svg>
+        <span id="bagCount">0</span>
+      </button>
+      <a class="login-link" href="login.html">Log in</a>
+      <a class="btn btn-dark btn-small" href="signup.html">Sign up <span>↗</span></a>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu"><span></span><span></span></button>
+  </header>
+
+  <main>
+    <section class="hero section-pad" id="home">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="dot"></span> STATIONERY FOR BUSY BRAINS</div>
+        <h1>Make room for<br><span class="scribble-word">bright ideas</span>.</h1>
+        <p>Notebooks, pens, sticky things and tiny desk joys — designed to make planning feel a little less serious.</p>
+        <div class="hero-actions">
+          <a class="btn btn-dark magnetic" href="#products">Shop the drop <span>↘</span></a>
+          <a class="text-link" href="#about">Why Scribbly? <span>→</span></a>
+        </div>
+        <div class="hero-note">
+          <span class="mini-star">✦</span>
+          <div><b>Small things. Big brain energy.</b><small>Made to be used, doodled on, folded, loved and probably coffee-stained.</small></div>
+        </div>
+      </div>
+
+      <div class="hero-art reveal" aria-label="Playful stationery desk illustration">
+        <div class="sticker sticker-green">made for<br><b>your brain</b></div>
+        <div class="spark s1">✦</div><div class="spark s2">✦</div>
+        <div class="flower flower-orange"><i></i><i></i><i></i><i></i><i></i><b></b></div>
+        <div class="wiggle wiggle-yellow">〰〰</div>
+        <div class="tape"></div>
+        <div class="desk-card tilt-card">
+          <div class="desk-topline"><span>THIS WEEK</span><span>07 / 12</span></div>
+          <div class="notebook">
+            <div class="spiral"></div>
+            <div class="paper-lines"></div>
+            <span class="note-title">things I might<br>actually do</span>
+            <div class="check-list"><i>✓</i><span>finish the idea</span><i>✓</i><span>buy snacks</span><i>○</i><span>be mysterious</span></div>
+            <div class="tiny-doodle">☻</div>
+          </div>
+          <div class="sticky sticky-one">remember:<br><b>good ideas<br>start messy</b></div>
+          <div class="pencil"><span></span></div>
+          <div class="eraser">oops</div>
+          <div class="clip">∩</div>
+        </div>
+        <div class="hand-note">your desk called.<br>it wants more color ↗</div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>NOTEBOOKS ✦</span><span>STICKY NOTES ☻</span><span>GEL PENS 〰</span><span>DESK JOYS ✎</span><span>PLANNERS ★</span>
+        <span>NOTEBOOKS ✦</span><span>STICKY NOTES ☻</span><span>GEL PENS 〰</span><span>DESK JOYS ✎</span><span>PLANNERS ★</span>
+      </div>
+    </div>
+
+    <section class="products section-pad" id="products">
+      <div class="section-heading reveal">
+        <div>
+          <span class="eyebrow"><span class="dot orange"></span> CURRENT OBSESSIONS</span>
+          <h2>Desk stuff worth<br><span class="scribble-underline">getting distracted by</span>.</h2>
+        </div>
+        <p>Useful enough for Monday. Fun enough for every other day.</p>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card reveal tilt-card" data-product="Cloud Nine Notebook">
+          <div class="product-art product-lilac">
+            <span class="badge">BESTSELLER</span>
+            <div class="book book-lilac"><div class="book-wire"></div><b>brain<br>dump</b><small>no judgement zone</small></div>
+            <div class="orbit">✦</div>
+          </div>
+          <div class="product-info"><div><small>NOTEBOOKS</small><h3>Cloud Nine Notebook</h3></div><b>$14</b></div>
+          <button class="add-btn">Add to bag <span>＋</span></button>
+        </article>
+
+        <article class="product-card reveal tilt-card" data-product="Tiny Triumphs Sticky Set">
+          <div class="product-art product-green">
+            <span class="badge">NEW</span>
+            <div class="sticky-stack"><i>do it<br>later-ish</i><i>tiny win!</i><i>important<br>maybe</i></div>
+            <div class="smile">☻</div>
+          </div>
+          <div class="product-info"><div><small>PAPER GOODS</small><h3>Tiny Triumphs Sticky Set</h3></div><b>$9</b></div>
+          <button class="add-btn">Add to bag <span>＋</span></button>
+        </article>
+
+        <article class="product-card reveal tilt-card" data-product="Doodle Juice Gel Pens">
+          <div class="product-art product-yellow">
+            <span class="badge">5 PACK</span>
+            <div class="pen-set"><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="pen-scribble">write it ↓</div>
+          </div>
+          <div class="product-info"><div><small>WRITING</small><h3>Doodle Juice Gel Pens</h3></div><b>$12</b></div>
+          <button class="add-btn">Add to bag <span>＋</span></button>
+        </article>
+
+        <article class="product-card reveal tilt-card" data-product="Do The Thing Planner">
+          <div class="product-art product-blue">
+            <span class="badge">POPULAR</span>
+            <div class="planner"><span>MON</span><b>DO THE<br>THING.</b><small>(or move it to tuesday)</small></div>
+            <div class="flower mini-flower"><i></i><i></i><i></i><i></i><i></i><b></b></div>
+          </div>
+          <div class="product-info"><div><small>PLANNERS</small><h3>Do The Thing Planner</h3></div><b>$18</b></div>
+          <button class="add-btn">Add to bag <span>＋</span></button>
+        </article>
+      </div>
+
+      <div class="product-footer reveal">
+        <p><span>↳</span> New drops arrive in small batches because too much choice is a choice.</p>
+        <button class="btn btn-light">View all goodies <span>↗</span></button>
+      </div>
+    </section>
+
+    <section class="about section-pad" id="about">
+      <div class="about-card reveal">
+        <div class="about-copy">
+          <span class="eyebrow"><span class="dot"></span> THE SCRIBBLY STORY</span>
+          <h2>Serious about<br><span class="scribble-word orange-text">not being too serious.</span></h2>
+          <p>Scribbly started with one simple thought: stationery can be useful without looking like office furniture. So we make desk essentials with personality — bold shapes, cheerful colors and just enough weirdness.</p>
+          <a class="text-link" href="#faq">More about our stuff <span>→</span></a>
+          <div class="about-stats">
+            <div><b>24k+</b><span>happy desks</span></div>
+            <div><b>4.9/5</b><span>average rating</span></div>
+            <div><b>100%</b><span>idea-friendly</span></div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="polaroid p1"><div class="photo photo-1"><span>✎</span></div><small>packing tiny joys</small></div>
+          <div class="polaroid p2"><div class="photo photo-2"><span>★</span></div><small>the scribbly desk</small></div>
+          <div class="big-flower flower-orange"><i></i><i></i><i></i><i></i><i></i><b></b></div>
+          <div class="arrow-note">made with<br>happy chaos ↘</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq section-pad" id="faq">
+      <div class="faq-intro reveal">
+        <span class="eyebrow"><span class="dot orange"></span> ASK AWAY</span>
+        <h2>Questions,<br><span class="scribble-underline">scribbles & answers.</span></h2>
+        <p>Still wondering something? Send us a note. We love notes. Obviously.</p>
+        <a class="btn btn-dark" href="mailto:hello@scribbly.store">hello@scribbly.store <span>↗</span></a>
+        <div class="faq-doodle">?</div>
+      </div>
+      <div class="faq-list reveal">
+        <article class="faq-item open">
+          <button><span>01</span><b>Where does Scribbly ship?</b><i>−</i></button>
+          <div class="faq-answer"><p>We currently ship across the US, with international shipping coming soon. Shipping options and estimated delivery times appear at checkout.</p></div>
+        </article>
+        <article class="faq-item">
+          <button><span>02</span><b>Are your notebooks fountain-pen friendly?</b><i>＋</i></button>
+          <div class="faq-answer"><p>Most Scribbly notebooks use smooth, sturdy paper that behaves nicely with gel pens, markers and everyday fountain pens.</p></div>
+        </article>
+        <article class="faq-item">
+          <button><span>03</span><b>Can I send Scribbly as a gift?</b><i>＋</i></button>
+          <div class="faq-answer"><p>Absolutely. Add a gift note at checkout and we’ll make the package feel extra special — with no price slip inside.</p></div>
+        </article>
+        <article class="faq-item">
+          <button><span>04</span><b>What if I change my mind?</b><i>＋</i></button>
+          <div class="faq-answer"><p>Unused items can be returned within 30 days of delivery. Send us a note and we’ll help make it painless.</p></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-copy">
+        <div class="brand footer-brand"><span class="brand-mark">✎</span><span>scribbly</span><i>!</i></div>
+        <h2>Your inbox could use<br><span>better stationery.</span></h2>
+      </div>
+      <form class="newsletter" id="newsletterForm">
+        <label for="email">New drops, tiny ideas, zero boring emails.</label>
+        <div><input id="email" type="email" placeholder="you@email.com" required><button type="submit">Join the list ↗</button></div>
+        <small id="newsletterMsg">No spam. We are too busy doodling.</small>
+      </form>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Scribbly Studio</span>
+      <div><a href="#products">Shop</a><a href="#about">About</a><a href="#faq">FAQs</a><a href="login.html">Account</a></div>
+      <span>Made with ✦ & questionable handwriting</span>
+    </div>
+    <div class="footer-word">SCRIBBLY!</div>
+  </footer>
+
+  <div class="search-overlay" id="searchOverlay" aria-hidden="true">
+    <button class="search-close" id="searchClose" aria-label="Close search">×</button>
+    <div class="search-box"><span>search scribbly</span><input id="searchInput" type="search" placeholder="Try “notebook”..." autofocus><p id="searchHint">Popular: notebook, pens, sticky notes, planner</p></div>
+  </div>
+
+  <div class="toast" id="toast">Added to your bag ✦</div>
+  <div class="cursor-dot" id="cursorDot"></div>
+  <script src="script.js"></script>
+</body>
+</html>

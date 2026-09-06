@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#8e61b5" />
+  <title>Log in — Scribbly</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="auth-body">
+  <div class="grain" aria-hidden="true"></div>
+  <a class="auth-brand brand" href="index.html"><span class="brand-mark">✎</span><span>scribbly</span><i>!</i></a>
+  <a class="back-home" href="index.html">← back to shop</a>
+  <main class="auth-wrap">
+    <section class="auth-art">
+      <div class="auth-copy">
+        <span class="eyebrow"><span class="dot orange"></span> WELCOME BACK</span>
+        <h1>Back to your<br><span class="scribble-word">brilliant mess.</span></h1>
+        <p>Your saved favorites, order history and tiny stationery obsessions are waiting.</p>
+      </div>
+      <div class="auth-notebook tilt-card"><span class="tape-mini"></span><b>today:</b><p>☑ log in<br>☐ make a list<br>☐ ignore the list<br>☐ buy cute pens</p><i>★</i></div>
+      <div class="auth-squiggle">〰〰</div>
+      <div class="auth-flower flower-orange"><i></i><i></i><i></i><i></i><i></i><b></b></div>
+    </section>
+    <section class="auth-panel">
+      <div class="auth-form-wrap">
+        <span class="eyebrow"><span class="dot"></span> YOUR SCRIBBLY ACCOUNT</span>
+        <h2>Log in</h2>
+        <p class="auth-sub">Good to see you again. We saved your desk.</p>
+        <form class="auth-form" id="loginForm">
+          <label>Email address<input type="email" placeholder="you@email.com" required></label>
+          <label>Password<div class="password-wrap"><input id="loginPassword" type="password" placeholder="••••••••" required><button type="button" class="show-password" data-target="loginPassword">show</button></div></label>
+          <div class="form-row"><label class="checkbox"><input type="checkbox"><span></span>Keep me logged in</label><a href="#">Forgot password?</a></div>
+          <button class="btn btn-dark auth-submit" type="submit">Log in to Scribbly <span>↗</span></button>
+          <div class="form-divider"><span>or</span></div>
+          <button class="social-btn" type="button"><span class="google-g">G</span> Continue with Google</button>
+          <p class="switch-auth">New around here? <a href="signup.html">Create an account →</a></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <div class="toast" id="toast">Demo login complete ✦</div>
+  <script src="script.js"></script>
+</body>
+</html>
