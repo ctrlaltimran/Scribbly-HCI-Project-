@@ -1,53 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#5C64B9" />
-  <title>Sign up — Scribbly</title>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#6d71bf">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="shortcut icon" href="favicon.ico">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Gloria+Hallelujah&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body class="auth-body signup-page">
-  <div class="grain" aria-hidden="true"></div>
-  <a class="auth-brand brand" href="index.html" aria-label="Scribbly home"><img src="img/logo.PNG" alt="Scribbly - Stationary Store" class="brand-logo" /></a>
-  <a class="back-home" href="index.html">← back to shop</a>
-  <main class="auth-wrap">
-    <section class="auth-art signup-art">
-      <div class="auth-copy">
-        <span class="eyebrow"><span class="dot orange"></span> JOIN THE CLUB</span>
-        <h1>More ideas.<br><span class="scribble-word">Less boring.</span></h1>
-        <p>Create an account for faster checkout, saved favorites and first dibs on new stationery drops.</p>
-      </div>
-      <div class="signup-stack">
-        <div class="signup-sticky a">tiny<br><b>joys</b> ✦</div>
-        <div class="signup-sticky b">big<br><b>ideas</b> ☻</div>
-        <div class="signup-sticky c">good<br><b>paper</b> ↗</div>
-      </div>
-      <div class="auth-squiggle">〰〰</div>
-      <div class="auth-flower flower-orange"><i></i><i></i><i></i><i></i><i></i><b></b></div>
-    </section>
-    <section class="auth-panel">
-      <div class="auth-form-wrap">
-        <span class="eyebrow"><span class="dot"></span> START SCRIBBLING</span>
-        <h2>Create account</h2>
-        <p class="auth-sub">It takes less time than choosing a pen color.</p>
-        <form class="auth-form" id="signupForm">
-          <div class="two-fields"><label>First name<input type="text" placeholder="First name" required></label><label>Last name<input type="text" placeholder="Last name" required></label></div>
-          <label>Email address<input type="email" placeholder="you@email.com" required></label>
-          <label>Password<div class="password-wrap"><input id="signupPassword" type="password" minlength="6" placeholder="6+ characters" required><button type="button" class="show-password" data-target="signupPassword">show</button></div></label>
-          <label class="checkbox terms"><input type="checkbox" required><span></span>I agree to the Terms & Privacy Policy</label>
-          <button class="btn btn-dark auth-submit" type="submit">Create my account</button>
-          <div class="form-divider"><span>or</span></div>
-          <button class="social-btn" type="button"><span class="google-g">G</span> Continue with Google</button>
-          <p class="switch-auth">Already have an account? <a href="login.html">Log in →</a></p>
-        </form>
-      </div>
-    </section>
-  </main>
-  <div class="toast" id="toast">Welcome to Scribbly ✦</div>
-  <script src="script.js"></script>
-</body>
-</html>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"><meta name="description" content="Sign up for a Scribbly account."><title>Sign up — Scribbly</title></head><body class="auth-body"><div class="grain" aria-hidden="true"></div><a class="skip-link" href="#mainContent">Skip to main content</a>
+  <div class="announcement">✦ FREE SHIPPING ON ORDERS OVER PKR 4,999 <span>•</span> COLORFUL SCHOOL-DAY FAVORITES <span>•</span> MADE FOR BRIGHT IDEAS ✦</div>
+  <header class="site-header auth-header">
+    <a class="brand" href="index.html" aria-label="Scribbly home"><img src="img/logo-header.png" alt="Scribbly stationery store" class="brand-logo"></a>
+    <nav class="main-nav" id="mainNav" aria-label="Primary navigation"><a  href="index.html">Home</a><a  href="products.html">Products</a><a  href="index.html#about">About</a><a  href="index.html#faq">FAQs</a><a  href="index.html#bulk">School Orders</a></nav>
+    <div class="header-actions">
+      <button class="icon-btn header-search" data-search-open aria-label="Search products"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"></circle><path d="m16 16 4 4"></path></svg></button>
+      <a class="icon-btn bag-btn header-bag" href="cart.html" aria-label="Open shopping bag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8Z"></path><path d="M9 9V6a3 3 0 0 1 6 0v3"></path></svg><span data-bag-count>0</span></a>
+      <a class="login-link" href="login.html" data-auth="guest">Log in</a>
+      <a class="btn btn-dark btn-small" href="signup.html" data-auth="guest">Sign up</a>
+      <a class="login-link member-link" href="dashboard.html" data-auth="member" hidden>Dashboard</a>
+      <button class="btn btn-dark btn-small logout-btn" type="button" data-auth="member" data-logout hidden>Log out</button>
+    </div>
+    <button class="menu-toggle" type="button" data-menu-toggle aria-label="Open navigation" aria-controls="mainNav" aria-expanded="false"><span></span><span></span></button>
+  </header><main id="mainContent" class="auth-main"><section class="auth-shell"><div class="auth-art"><div class="auth-copy"><span class="eyebrow"><span class="dot orange"></span> JOIN SCRIBBLY</span><h1>Your favorites, <span class="scribble-word">all in one place.</span></h1><p>Create your Scribbly account to save your bag, track your orders, and enjoy faster checkout.</p></div><div class="auth-image-frame"><img src="img/right sdie image updated.jpg" alt="Students with the Scribbly mascot" class="auth-feature-image"></div></div><section class="auth-panel"><div class="auth-form-wrap"><span class="eyebrow"><span class="dot"></span> YOUR SCRIBBLY ACCOUNT</span><h2>Sign up</h2><p class="auth-sub">Clear labels, visible feedback and simple steps help you know exactly what happens next.</p><form class="auth-form" id="signupForm" novalidate><div class="two-fields"><div class="input-field"><label for="signupFirstName">First name</label><input id="signupFirstName" name="firstName" type="text" placeholder="First name" autocomplete="given-name" required><small class="field-error" data-error-for="signupFirstName"></small></div><div class="input-field"><label for="signupLastName">Last name</label><input id="signupLastName" name="lastName" type="text" placeholder="Last name" autocomplete="family-name" required><small class="field-error" data-error-for="signupLastName"></small></div></div><div class="input-field"><label for="signupEmail">Email address</label><input id="signupEmail" name="email" type="email" placeholder="you@email.com" autocomplete="email" required><small class="field-error" data-error-for="signupEmail"></small></div><div class="input-field"><label for="signupPassword">Password</label><div class="password-wrap"><input id="signupPassword" name="password" type="password" minlength="6" placeholder="At least 6 characters" autocomplete="new-password" required><button type="button" class="show-password" data-target="signupPassword" aria-label="Show password">Show</button></div><small class="password-guide" data-password-guide>Use at least 6 characters.</small><small class="field-error" data-error-for="signupPassword"></small></div><div class="input-field"><label for="signupConfirm">Confirm password</label><div class="password-wrap"><input id="signupConfirm" name="confirm" type="password" minlength="6" placeholder="Type the same password again" autocomplete="new-password" required><button type="button" class="show-password" data-target="signupConfirm" aria-label="Show confirm password">Show</button></div><small class="field-error" data-error-for="signupConfirm"></small></div><label class="checkbox terms"><input id="termsCheck" type="checkbox" required><span></span>I agree to the <a href="terms.html" target="_blank" class="terms-link">Terms &amp; Privacy notice</a></label><small class="field-error terms-error" data-error-for="termsCheck"></small><button class="btn btn-primary auth-submit" type="submit">Create my account</button><p class="form-status" data-auth-status aria-live="polite"></p><div class="form-divider"><span>or continue with</span></div><div class="social-stack"><button class="social-btn" type="button" data-social-provider="Google"><svg class="social-icon google-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#4285F4" d="M21.6 12.23c0-.71-.06-1.24-.2-1.8h-9.2v3.34h5.4c-.11.83-.7 2.08-2.01 2.92l-.02.11 2.92 2.26.2.02c1.85-1.71 2.91-4.23 2.91-6.85Z"></path><path fill="#34A853" d="M12.2 21.8c2.65 0 4.87-.87 6.49-2.72l-3.1-2.39c-.83.56-1.95.95-3.39.95-2.6 0-4.81-1.76-5.6-4.2l-.11.01-3.04 2.35-.04.1a9.8 9.8 0 0 0 8.79 5.9Z"></path><path fill="#FBBC05" d="M6.6 13.44a5.94 5.94 0 0 1-.32-1.92c0-.67.12-1.32.31-1.92l-.01-.13-3.08-2.39-.1.05a9.79 9.79 0 0 0 .01 8.77l3.19-2.46Z"></path><path fill="#EA4335" d="M12.2 5.4c1.84 0 3.08.79 3.79 1.44l2.76-2.69C17.05 2.57 14.85 1.6 12.2 1.6a9.8 9.8 0 0 0-8.8 5.53L6.59 9.6c.8-2.44 3.01-4.2 5.61-4.2Z"></path></svg><span>Continue with Google</span></button><button class="social-btn" type="button" data-social-provider="Apple"><svg class="social-icon apple-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.05 12.54c-.02-2.1 1.72-3.12 1.8-3.17-.98-1.43-2.5-1.63-3.04-1.65-1.28-.14-2.52.77-3.17.77-.66 0-1.65-.75-2.72-.73-1.38.02-2.68.82-3.39 2.07-1.47 2.54-.37 6.28 1.03 8.33.7 1 1.51 2.11 2.58 2.07 1.04-.04 1.43-.66 2.68-.66 1.24 0 1.61.66 2.69.64 1.12-.02 1.83-1 2.5-2.01.81-1.15 1.14-2.29 1.15-2.35-.02-.01-2.09-.81-2.11-3.31ZM14.98 6.37c.56-.7.94-1.64.84-2.59-.81.04-1.82.56-2.4 1.24-.52.6-.98 1.58-.87 2.49.92.07 1.85-.46 2.43-1.14Z"></path></svg><span>Continue with Apple</span></button></div><p class="switch-auth">Already have an account? <a href="login.html">Log in →</a></p></form></div></section></section></main><div class="search-overlay" data-search-overlay aria-hidden="true">
+    <button class="search-close" type="button" data-search-close aria-label="Close search">×</button>
+    <div class="search-box"><span>search scribbly</span><label class="sr-only" for="globalSearch">Search products</label><input id="globalSearch" data-search-input type="search" placeholder="Try “notebook”..."><p data-search-hint>Popular: notebook, gel pens, sticky notes, pouch</p><a class="text-link search-all-link" href="products.html">Browse all products →</a></div>
+  </div>
+  <div class="toast" data-toast role="status" aria-live="polite"><span data-toast-message>Done ✦</span><button type="button" data-toast-action hidden>Undo</button></div><script src="script.js"></script></body></html>

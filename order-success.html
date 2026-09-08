@@ -1,0 +1,224 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#6d71bf">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"><meta name="description" content="Thank you for your order! Your Scribbly stationery is confirmed and getting packed."><title>Order Confirmed — Scribbly</title></head><body><div class="grain" aria-hidden="true"></div><a class="skip-link" href="#mainContent">Skip to main content</a>
+  <div class="announcement">✦ FREE SHIPPING ON ORDERS OVER PKR 4,999 <span>•</span> COLORFUL SCHOOL-DAY FAVORITES <span>•</span> MADE FOR BRIGHT IDEAS ✦</div>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Scribbly home"><img src="img/logo-header.png" alt="Scribbly stationery store" class="brand-logo"></a>
+    <nav class="main-nav" id="mainNav" aria-label="Primary navigation"><a href="index.html">Home</a><a href="products.html">Products</a><a href="index.html#about">About</a><a href="index.html#faq">FAQs</a><a href="index.html#bulk">School Orders</a></nav>
+    <div class="header-actions">
+      <button class="icon-btn header-search" data-search-open aria-label="Search products"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"></circle><path d="m16 16 4 4"></path></svg></button>
+      <a class="icon-btn bag-btn header-bag" href="cart.html" aria-label="Open shopping bag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1 12H6L5 8Z"></path><path d="M9 9V6a3 3 0 0 1 6 0v3"></path></svg><span data-bag-count>0</span></a>
+      <a class="login-link" href="login.html" data-auth="guest">Log in</a>
+      <a class="btn btn-dark btn-small" href="signup.html" data-auth="guest">Sign up</a>
+      <a class="login-link member-link" href="dashboard.html" data-auth="member" hidden>Dashboard</a>
+      <button class="btn btn-dark btn-small logout-btn" type="button" data-auth="member" data-logout hidden>Log out</button>
+    </div>
+    <button class="menu-toggle" type="button" data-menu-toggle aria-label="Open navigation" aria-controls="mainNav" aria-expanded="false"><span></span><span></span></button>
+  </header>
+
+  <main id="mainContent" class="inner-main order-success-page" data-order-success-page>
+    <section class="order-success-hero">
+      <div class="success-badge-circle" aria-hidden="true">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="24" cy="24" r="21" class="circle-track"></circle>
+          <path d="m14 24 7 7 13-13" class="check-mark"></path>
+        </svg>
+      </div>
+      <span class="eyebrow"><span class="dot green"></span> ORDER CONFIRMED</span>
+      <h1>Thank you for your order! <span class="scribble-word">Bright days ahead.</span></h1>
+      <p class="success-hero-desc">We've received your order and our packing desk is carefully preparing your stationery. An email confirmation has been dispatched to your inbox.</p>
+      
+      <div class="order-quick-bar">
+        <div class="quick-bar-item">
+          <small>Order Number</small>
+          <strong data-success-ref>SCR-000000</strong>
+        </div>
+        <div class="quick-bar-divider" aria-hidden="true"></div>
+        <div class="quick-bar-item">
+          <small>Date Placed</small>
+          <span data-success-date>Today</span>
+        </div>
+        <div class="quick-bar-divider" aria-hidden="true"></div>
+        <div class="quick-bar-item">
+          <small>Payment Method</small>
+          <span data-success-payment>Cash on delivery</span>
+        </div>
+        <div class="quick-bar-divider" aria-hidden="true"></div>
+        <div class="quick-bar-item">
+          <small>Status</small>
+          <span class="status-pill-confirmed">● Order Confirmed</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="order-success-container section-pad">
+      <div class="order-success-layout">
+        
+        <!-- Left column: Ordered Products and Delivery Progress -->
+        <div class="order-primary-column">
+          
+          <div class="card-surface success-items-card">
+            <div class="success-card-header">
+              <div>
+                <span class="eyebrow"><span class="dot orange"></span> PACKAGE CONTENTS</span>
+                <h2>Items in your order (<span data-success-items-count>0</span>)</h2>
+              </div>
+              <button class="print-receipt-btn" type="button" data-print-order aria-label="Print receipt">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M6 9V2h12v7"></path>
+                  <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                  <path d="M6 14h12v8H6z"></path>
+                </svg>
+                Print Receipt
+              </button>
+            </div>
+
+            <div class="success-products-list" data-success-products-list>
+              <!-- Populated dynamically with ordered items -->
+            </div>
+          </div>
+
+          <!-- Order Tracking Stages Card -->
+          <div class="card-surface success-tracker-card">
+            <div class="success-card-header">
+              <div>
+                <span class="eyebrow"><span class="dot"></span> DELIVERY STAGES</span>
+                <h2>What happens next?</h2>
+              </div>
+              <span class="delivery-estimate-badge">Est. Delivery: 2–4 Days</span>
+            </div>
+            
+            <div class="order-timeline">
+              <div class="timeline-step step-done">
+                <div class="timeline-icon">✓</div>
+                <div class="timeline-info">
+                  <b>Order Confirmed</b>
+                  <p>Your order details have been securely logged.</p>
+                </div>
+              </div>
+              <div class="timeline-connector active"></div>
+              <div class="timeline-step step-active">
+                <div class="timeline-icon">📦</div>
+                <div class="timeline-info">
+                  <b>Packing with Care</b>
+                  <p>Wrapped with Scribbly stickers and safe bubble protection.</p>
+                </div>
+              </div>
+              <div class="timeline-connector"></div>
+              <div class="timeline-step">
+                <div class="timeline-icon">🚚</div>
+                <div class="timeline-info">
+                  <b>Dispatched & En Route</b>
+                  <p>Handed over to our courier partner with live SMS tracking.</p>
+                </div>
+              </div>
+              <div class="timeline-connector"></div>
+              <div class="timeline-step">
+                <div class="timeline-icon">✦</div>
+                <div class="timeline-info">
+                  <b>Arrived at Your Doorstep</b>
+                  <p>Delivered safely and ready for your desk.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right column: Customer & Address + Cost Summary + Actions -->
+        <aside class="order-secondary-column">
+
+          <!-- Order Summary Breakdown -->
+          <div class="card-surface success-summary-card">
+            <span class="eyebrow"><span class="dot"></span> PAYMENT BREAKDOWN</span>
+            <h2>Order summary</h2>
+
+            <div class="summary-breakdown">
+              <div class="summary-row">
+                <span>Subtotal</span>
+                <span data-success-subtotal>PKR 0</span>
+              </div>
+              <div class="summary-row">
+                <span>Standard Delivery</span>
+                <span data-success-delivery>PKR 0</span>
+              </div>
+              <div class="summary-divider"></div>
+              <div class="summary-row summary-grand-total">
+                <strong>Total Amount</strong>
+                <strong data-success-total>PKR 0</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Shipping Details Card -->
+          <div class="card-surface success-address-card">
+            <span class="eyebrow"><span class="dot orange"></span> SHIPPING DETAILS</span>
+            <h2>Delivery information</h2>
+
+            <div class="address-details-box">
+              <div class="address-item">
+                <small>Recipient</small>
+                <b data-success-name>Valued Customer</b>
+              </div>
+              <div class="address-item">
+                <small>Street Address</small>
+                <p data-success-address>—</p>
+              </div>
+              <div class="address-item">
+                <small>City</small>
+                <p data-success-city>—</p>
+              </div>
+              <div class="address-item">
+                <small>Phone Number</small>
+                <p data-success-phone>—</p>
+              </div>
+              <div class="address-item">
+                <small>Email Updates</small>
+                <p data-success-email>—</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Next Actions Card -->
+          <div class="card-surface success-actions-card">
+            <h2>Ready for more ideas?</h2>
+            <p>Browse other colorful desk essentials or visit your account dashboard.</p>
+            <div class="success-actions-buttons">
+              <a href="products.html" class="btn btn-primary btn-full">Continue shopping</a>
+              <a href="dashboard.html" class="btn btn-light-outline btn-full">View account dashboard</a>
+            </div>
+          </div>
+
+        </aside>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-copy"><h2>Your school bag could use <span>better stationery.</span></h2></div>
+      <form class="newsletter" data-newsletter-form novalidate>
+        <label for="footerEmail">New drops, study ideas and colorful little finds.</label>
+        <div><input id="footerEmail" name="email" type="email" placeholder="you@email.com" autocomplete="email" required><button type="submit">Join the list</button></div>
+        <small data-newsletter-msg>No spam. Just stationery worth opening.</small>
+      </form>
+    </div>
+    <div class="footer-word" aria-hidden="true">SCRIBBLY</div>
+    <div class="footer-bottom"><span>© 2026 Scribbly Store</span><div><a href="products.html">Shop</a><a href="index.html#about">About</a><a href="index.html#faq">FAQs</a><a href="index.html#bulk">School Orders</a><a href="dashboard.html">Account</a><a href="terms.html">Terms & Privacy</a></div><span>Made for bright school days ✦</span></div>
+  </footer>
+
+  <div class="search-overlay" data-search-overlay aria-hidden="true">
+    <button class="search-close" type="button" data-search-close aria-label="Close search">×</button>
+    <div class="search-box"><span>search scribbly</span><label class="sr-only" for="globalSearch">Search products</label><input id="globalSearch" data-search-input type="search" placeholder="Try “notebook”..."><p data-search-hint>Popular: notebook, gel pens, sticky notes, pouch</p><a class="text-link search-all-link" href="products.html">Browse all products →</a></div>
+  </div>
+  <div class="toast" data-toast role="status" aria-live="polite"><span data-toast-message>Done ✦</span><button type="button" data-toast-action hidden>Undo</button></div>
+  <script src="script.js"></script>
+</body>
+</html>

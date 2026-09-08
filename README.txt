@@ -1,18 +1,28 @@
-SCRIBBLY — STATIC 3-PAGE WEBSITE
+SCRIBBLY — HCI CCP FRONT-END PROTOTYPE
 
-Files:
-- index.html — interactive home page
-- login.html — login page
-- signup.html — signup page
-- styles.css — complete responsive styling
-- script.js — interactions / demo UI behavior
+Main screens:
+- index.html — home / landing page
+- products.html — product browsing, search and filters
+- product.html — reusable product-detail screen using ?id=
+- cart.html — editable shopping bag with undo
+- checkout.html — validated checkout with review-before-confirm
+- login.html — user login
+- signup.html — user registration
+- dashboard.html — user dashboard
+
+Supporting files:
+- styles.css — responsive design system for desktop, tablet and mobile
+- script.js — store interactions, validation, localStorage state and feedback
+- img/ — supplied Scribbly logo, mascot and product images
+- graphics/supporting-artifacts/ — four branded supporting visuals/mockups
+- project-docs/ — HCI project notes, brand guide and usability-test plan
 
 How to use:
-1. Open index.html directly in a browser, or serve the folder with any static server.
-2. Login/signup are front-end demo forms. Connect them to your real auth/backend later.
-3. Product/cart/search interactions are UI demos and can be wired to e-commerce logic later.
+1. Open index.html in a modern browser or serve the folder as a static website.
+2. Account, bag and order state are stored in the browser using localStorage.
 
-Design notes:
-- Custom original design inspired by the playful editorial composition in the reference screenshot.
-- Uses hand-drawn doodles, bold purple/green/orange/yellow accents, outlined cards, tactile paper textures and playful typography.
-- Responsive for desktop, tablet and mobile.
+Prototype flows:
+- Registration: Home → Sign up → Dashboard → Products
+- Purchase: Products → Product detail → Bag → Checkout → Review → Confirm → Dashboard
+
+The prototype includes responsive layouts, visible feedback, readable controls, form validation, error recovery, quantity constraints, undo on removal, keyboard focus states, clear system-status messages and review-before-confirm behavior.
