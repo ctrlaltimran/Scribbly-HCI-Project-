@@ -64,7 +64,7 @@ function addToCart(id, qty = 1) {
   else cart.push({ id, qty: Math.min(10, Math.max(1, qty)) });
   saveCart(cart);
   const prefix = qty > 1 ? `${qty}× ` : '';
-  showToast(`${prefix}${PRODUCTS[id].name} added to cart ✦`, 'View cart →', () => {
+  showToast(`${prefix}${PRODUCTS[id].name} added to cart ✦`, 'View cart', () => {
     location.href = 'cart.html';
   });
 }
@@ -746,7 +746,7 @@ function initDashboard() {
   const order = readJSON('scribblyOrder', null);
   const box = $('[data-dashboard-order]');
   if (box && order) {
-    box.innerHTML = `<div class="order-chip"><b>${escapeHTML(order.ref)}</b><span>${escapeHTML(order.date)} · ${order.items} item${order.items === 1 ? '' : 's'} · ${formatPKR(order.total)}</span><span>${escapeHTML(order.status)}</span><a class="text-link" href="order-success.html" style="margin-top:6px;display:inline-block;font-size:13px;font-weight:700;">View full order details →</a></div>`;
+    box.innerHTML = `<div class="order-chip"><b>${escapeHTML(order.ref)}</b><span>${escapeHTML(order.date)} · ${order.items} item${order.items === 1 ? '' : 's'} · ${formatPKR(order.total)}</span><span>${escapeHTML(order.status)}</span><a class="text-link" href="order-success.html" style="margin-top:6px;display:inline-block;font-size:13px;font-weight:700;">View full order details</a></div>`;
   }
 }
 
