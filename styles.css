@@ -430,27 +430,20 @@ button {
 }
 
 .hero-character-img {
-  max-width: 95%;
-  max-height: 460px;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  filter: drop-shadow(0 18px 28px rgba(32, 32, 31, 0.15));
-  animation: heroFloat 4.5s ease-in-out infinite alternate;
-  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  width: 100%;
+  max-width: 460px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 28px;
+  border: 2px solid var(--ink);
+  box-shadow: 10px 12px 0 rgba(32, 32, 31, 0.12);
+  display: block;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
 }
 
 .hero-art:hover .hero-character-img {
-  transform: scale(1.04) rotate(-1.5deg);
-}
-
-@keyframes heroFloat {
-  0% {
-    transform: translateY(0px) rotate(0deg);
-  }
-  100% {
-    transform: translateY(-12px) rotate(-1.5deg);
-  }
+  transform: translateY(-4px) rotate(-0.5deg);
+  box-shadow: 12px 16px 0 rgba(32, 32, 31, 0.16);
 }
 
 .notebook {
@@ -2559,7 +2552,7 @@ button {
     min-height: 480px;
   }
   .hero-character-img {
-    max-height: 340px;
+    max-width: 380px;
   }
   .section-heading {
     align-items: start;
@@ -2659,7 +2652,9 @@ button {
     margin-top: 15px;
   }
   .hero-character-img {
-    max-height: 280px;
+    max-width: 310px;
+    border-radius: 20px;
+    box-shadow: 6px 8px 0 rgba(32, 32, 31, 0.12);
   }
   .sticky-one {
     right: 3%;
